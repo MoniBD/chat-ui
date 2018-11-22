@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    
+  <head>    
+    <title> Moni's chat  </title>
+    <link href="/style.css" rel="stylesheet" />
+    <link href="spotim-logo.ico" rel ="icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+  </head>
+  <body>
+        <div id="modal" class="modal">
+                <div class="modal-content">
+                        <div id="error"> <h3> You must enter your name!</h3> </div>
+                    <div id="modal_div">
+                     <h3>Please Enter Your Name: <input id="name" type="text" value ="" autocomplete="off" />
+                    <button class="send_btn" id = "name_btn"> Get In </button>
+                    </h3> 
+                </div>
+                </div>
+            </div>
+    <section class="container">
+      <div id="head_container" class = "head_container">
+        <H1 id="header"> Welcome to my chat </H1>
+      </div>
+      
+    <div id ="side_container" class="side_container">
+         <h2 class="manu" id="menu_welcome"> </h2>
+        <p class="manu">  <br>
+            <h4 class="manu"> Enjoy My Challenge
+                <br>
+                <br>
+                Take a Chat <br> and Have <br> Some Company 
+            </h4>
+
+    </p>
+        </div>
+        <div class="side_down"> </div>
+        <div class="main_container">
+            <div>
+                <div class = "msg_board" id="msg_board"></div>
+             </div>
+         </div> 
+         <div class="typing_area" id="typing"></div>
+    <div class ="text_place"> 
+               <form id="form" action=""></form>
+               <button class="send_btn" id="send_btn">Send</button><input id="text_input" type="text" autocomplete="off" value=""/>
+            </form>
+   </div>   
+</section>
+   <script src="/index.js"></script>
+  </body>
+</html>
